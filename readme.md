@@ -1,32 +1,16 @@
-# 重新生成秘钥
-php artisan key:generate
-# 执行启动命令
-php artisan serve
-# 创建模型model （Article 为表名称）
-php artisan make:model Models/Article
-# 根据模型创建控制器（Article 为模型名称）
-php artisan admin:make ArticleController --model=App\\Admin\\Models\\Article
+# chatty
 
-#清除配置缓存
-php artisan optimize:clear //Remove the cached bootstrap files
-php artisan view:clear 
-php artisan config:clear 
-php artisan cache:clear  
-php artisan route:clear 
+A new chatty project.
 
-####网站部署正式环境之前步骤：
+## Getting Started
 
->1.php artisan config:clear
+This project is a starting point for a Flutter application.
 
->2.php artisan view:clear
+A few resources to get you started if this is your first Flutter project:
 
->3.php artisan cache:clear
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
->4.php artisan optimize
-
->5.删除 bootstrap/cache 里面的文件
-
-# 后台账户密码
-账户 admin
-密码 123456
-
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
